@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.itheima.mobileSafe"
+    	android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+    >
+	    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	    
+	<com.itheima.ui.SetControl
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:id="@+id/sc_setting_mycontrol"
+	     itheima:title="提示更新"
+	     itheima:des_on="开启"
+	     itheima:des_off="关闭"
+	    />
+	<com.itheima.ui.SetControl
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:id="@+id/sc_setting_calllocation"
+	     itheima:title="是否开启来电显示"
+	     itheima:des_on="开启"
+	     itheima:des_off="关闭"
+	    />
+	<com.itheima.ui.CallLocationStyle
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:id="@+id/cls_setting_callstyle"
+	    itheima:title="更换来电显示样式"
+	    />
+	<com.itheima.ui.CallLocationStyle
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:id="@+id/cls_setting_attribute"
+	    itheima:title="归属地提示框位置"
+	    />
+	
+	<com.itheima.ui.SetControl
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:id="@+id/sc_setting_blacknum"
+	     itheima:title="是否开启拦截模式"
+	     itheima:des_on="开启"
+	     itheima:des_off="关闭"
+	    />
+	<com.itheima.ui.SetControl
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:id="@+id/sc_setting_lock"
+	     itheima:title="是否开启枷锁"
+	     itheima:des_on="开启"
+	     itheima:des_off="关闭"
+	    />
+	</LinearLayout>
+</ScrollView>

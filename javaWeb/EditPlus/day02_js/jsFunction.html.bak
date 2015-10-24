@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script type="text/javascript">
+	/*
+		打印一个表格，打印的表格可以自动的控制他的行数列数
+		思路：document.write()是打印
+				通过for循环循环行和列，
+				因为是不确定的多少行和列，所以说这个函数有两个参数分别代表行数和列数
+	*/
+	function printSheet(a,b)
+	{
+		document.write("<table border='1' width='500px' height='500px' aligent='center'>");
+
+			for(var i=0;i<a;i++)
+			{
+				document.write("<tr>");
+					for(var j=0;j<b;j++)
+					{
+						document.write("<td></td>");
+						
+					}
+				document.write("</tr>");
+			}
+		document.write("</table>");	
+	}
+
+		printSheet(5,5);	
+		
+	
+	
+  </script>
+  <title>打印表格</title>
+ </head>
+ <body>
+	
+	
+ </body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>jsObject</title>
+  <script type="text/javascript">
+	var arry=new Array([3]);
+	document.write(arry.length);
+	//alert(arry.length);
+	//alert(arry[0]);
+	//alert(arry[1]);
+	/*var arry1=new Array(2);
+	alert(arry1.length);
+	alert(arry1[0]);
+	//alret("Hello");
+	var arry2=new Array(3,4,1,6,false,true,null,NaN);
+	alert(arry2.length);
+	alert(arry2[6]);
+	alert(arry2);
+	alert(arry2.join("~"));
+	//alert(arry2.push(3));
+	alert(arry2[0]);
+	//alert(arry2.pop(arry2[0]))
+	alert(arry2.length)*/
+	/*var date=new Date();
+	var d=date.getDay();
+	var d1=date.toLocaleDateString();
+	var time=date.toLocaleTimeString();
+	var d2=date.toLocaleString();
+	alert(d);
+	alert(d1);
+	alert(time);
+	alert(d2);*/
+	/*var num=Math.round(-3.5);
+	alert(num);
+	var num=new Number(15);
+	num1=num.toString(16);
+	alert(num1);*/
+	var num="1";
+	//alert(parseInt(num));
+	var num1="12.27";
+	//alert(parseFloat(num1));
+	alert(num+num1);
+	
+	
+  </script>
+ </head>
+ <body>
+  
+ </body>
+</html>

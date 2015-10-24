@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+	        style="@style/top_title_style" >
+						        
+				<TextView
+	            android:id="@+id/mycollection_title"
+	            style="@style/top_title_word_style"
+	            android:text="搜索结果"/>
+	</LinearLayout>
+	<RelativeLayout
+        android:id="@+id/rl_search_result_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp" >
+
+        <EditText
+            android:id="@+id/et_searchkey_result_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/search_key_str"
+            android:textSize="15sp" />
+       <!-- <ImageButton
+                android:id="@+id/iv_search_id"
+                android:layout_width="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="290dp"
+                android:gravity="center"
+                android:background="@drawable/search" /> -->
+           <ImageView
+           android:id="@+id/iv_search_result_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="290dp"
+            android:background="@drawable/search" />
+</RelativeLayout>
+    
+
+</LinearLayout>

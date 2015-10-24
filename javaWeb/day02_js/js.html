@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>js.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=GBK">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <!-- 用js打印出九九乘法表 -->
+   
+
+  </head>
+  
+  <body>
+   <script type="text/javascript">
+    	/*document.write("<table border='0' align='center' color='blue' width='60%'>");
+    	for(var x=1;x<=9;x++)
+    	{
+    		document.write("<tr>");
+    		for(var y=1;y<=x;y++)
+    		{
+    			document.write("<td>"+y+"*"+x+"="y*x+"</td>");
+    		}
+    		document.write("</tr>");
+    	}
+    	document.write("</table>");*/
+    	document.write("<table border='0' align='center' width='60%'>");
+			for(var x=1; x<=9; x++)
+			{
+				document.write("<tr>");
+				for(var y=1; y<=x; y++)
+				{
+					document.write("<td>"+y+"*"+x+"="+y*x+"</td>");
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+			
+    	
+    </script>
+  </body>
+</html>

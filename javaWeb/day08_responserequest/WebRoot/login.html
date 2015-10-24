@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=GBk">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+
+      用户名：<input type="text" name="username" id="username"/><br/>
+       密  码：<input type="password" name="password" id="password"/><br/>
+      验证码：<img src="/day08_responserequest/servlet/ResponseDemo3" id="image" width="200px" height="35px"/>
+      <a href="javascript:changCheck()">看不清楚呀</a>
+      <br/>     
+      <input type="submit" value="登陆"/>
+     <script type="text/javascript">
+     	function changCheck()
+     	{			 
+     		var img=document.getElementById("image");
+     		//实现定时刷新的功能,img标签的连接重新定义到起初的那个响应的ResponseDemo类中
+     		//错误：new一个对象应该是Date（），少写了一个括号，就这样子了，就不可以运行了
+     		img.src = "/day08_responserequest/servlet/ResponseDemo3?time="+new Date().getTime();
+
+     	}
+     </script>
+
+  </body>
+</html>

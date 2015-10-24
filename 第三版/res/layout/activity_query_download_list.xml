@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!-- 下载列表查看页 -->
+    <ImageView 
+        android:id="@+id/download_list_top_img_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/top_uploaddown_img"/>
+    <ImageView 
+        android:id="@+id/download_list_goback_img_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:src="@drawable/goback_arrow"/>
+    </RelativeLayout>
+    <!-- 查看本地下载列表xml文件 -->
+    <ListView 
+        android:id="@+id/download_list_lv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

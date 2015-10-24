@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="activity_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">@string/category_home</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">25dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="main_tab_but_linear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="channel_type_style">
+        <item name="android:layout_margin">4dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="account_more_list_text">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">22dip</item>
+        <item name="android:paddingLeft">25dip</item>
+       
+    </style>
+    
+    <!-- 页面顶部标题栏样式 /zhanghui-->
+    <style name="top_title_style">       
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">#01AFD2</item>
+        <item name="android:orientation">horizontal</item>        
+    </style>
+    
+    <!-- 页面顶部标题栏 字体样式 /zhanghui-->
+    <style name="top_title_word_style">       
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+     <!-- 横向列表item文本样式/zhanghui -->
+    <style name="top_category_scroll_view_item_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 我的频道条目字体样式 -->
+    <style name="subscribe_my_tip_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/subscribe_tip_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+   
+    <!-- 频道分割线样式 -->
+    <style name="subscribe_seperate_line">
+        <item name="android:background">@color/subscribe_seperate_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:layout_marginTop">14.0dip</item>
+        <item name="android:layout_marginBottom">14.0dip</item>
+    </style>
+    
+    <!-- 所有频道条目字体样式 -->
+    <style name="subscribe_more_tip_text" parent="@style/subscribe_my_tip_text">
+        <item name="android:textSize">13.0sp</item>
+    </style>
+    
+</resources>

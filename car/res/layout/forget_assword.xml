@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 该页面只有功能，没有排版 ,吴利昌注-->
+    <Button 
+        android:id="@+id/bt_resetpassword_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_password_str"
+        android:textSize="15sp"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cellphone_mail_hint"
+        android:textSize="12sp"/>
+    <EditText 
+        android:id="@+id/et_phoneNumOrEmail_id"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="15sp"/>
+
+</LinearLayout>

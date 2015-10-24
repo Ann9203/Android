@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/applicationlist"
+       android:background="#8866ff00"
+       android:textSize="22sp"
+       android:gravity="center_horizontal"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"   
+      
+       />
+   <!-- 这是滚动字幕的第一种做法 -->
+   <com.itheima.ui.MyTextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/tv_home_description"
+       android:text="@string/mobileDes"
+       android:singleLine="true"
+       android:ellipsize="marquee"
+       android:focusableInTouchMode="true"
+       android:marqueeRepeatLimit="marquee_forever"
+       android:layout_marginTop="8dp"
+       android:textSize="16sp"
+       android:textColor="#79658C"
+       />
+   <GridView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/gv_home_application"
+       android:numColumns="3"
+       android:verticalSpacing="10dp"
+       android:layout_margin="20dp"
+       
+       ></GridView>
+    
+
+</LinearLayout>

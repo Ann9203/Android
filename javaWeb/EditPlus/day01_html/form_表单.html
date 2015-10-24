@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	fieldset{
+		text-align:left;
+	}
+	legend{
+		font-size:30px;
+		color:red;
+		border:1px;
+		font-weight:bold;
+	}
+	#username{
+		margin-left:23px;
+	}
+	#password{
+		margin-left:35px;
+	}
+	#imag{
+		margin-left:35px;
+	}
+	#description{
+		margin-left:5px;
+	}
+	.are{
+		margin-left:30px;
+	}
+	
+	.radio{
+		margin-left:25px;
+	}
+	.aihao
+	{
+		margin-left:25px;
+	}
+	.btn{
+		margin-left:100px;
+		margin-top:20px;
+		width:40px;
+		height:30px;
+		border-width:0;
+		background-color:pink;
+	}
+  </style>
+ </head>
+	<body>
+	
+	<form  method="get">
+	   <fieldset>
+	   <legend>必填写内容</legend>
+		用户名：<input type="text" name="username" id="username"/><br/><br/>
+		密  码：<input type="password" name="password" id="password"/><br/><br/>
+		性  别：<input type="radio" class="radio" name="sex" />男
+				<input type="radio" class="radio" name="sex" checked />女<br/><br/>
+		爱  好：<input type="checkbox"class="aihao" name="aihao" />吃饭
+				<input type="checkbox"class="aihao" name="aihao" />睡觉
+				<input type="checkbox"class="aihao" name="aihao" checked />学习
+				<input type="checkbox"class="aihao" name="aihao" />唱歌<br/><br/>
+		上传图片：<input type="file" name="file"/><br/><br/>
+		预    览：<img src="3.jpg" id="imag" width="20px" height="30px"/>
+		</fieldset>
+		<fieldset>
+		<legend>选填写内容</legend>
+		地  区：<select name="are" class="are">
+					<option name="sh">上海</option>
+					<option name="bj" selected>北京</option>
+					<option name="nj">南京</option>
+					<option name="gd">广东</option>
+				</select><br/><br/>
+		自我介绍：<textarea id="description" rows="4" cols="40"></textarea><br/><br/>
+		</fieldset>
+		<input type="submit" class="btn" value="登陆"/>
+		<input type ="reset" class="btn" value="重置"/>	
+	</form>
+	</body>
+
+</html>

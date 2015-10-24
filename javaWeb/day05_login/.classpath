@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/jdbctool.jar" sourcepath="C:/Users/博/Desktop/jtool.zip"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.8-bin.jar" sourcepath="Z:/雪宝宝/学习/就业班/JAVA/javaweb-74期Android/day05-jdbc1/resource/驱动/mysql-connector-java-5.0.8.zip"/>
+	<classpathentry kind="lib" path="lib/swing-layout-1.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/AbsoluteLayout.jar"/>
+	<classpathentry kind="lib" path="lib/JTool.jar" sourcepath="X:/GitHubCode/javaWeb/day05_jdbc/bin/jtool"/>
+	<classpathentry kind="lib" path="lib/JTool2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

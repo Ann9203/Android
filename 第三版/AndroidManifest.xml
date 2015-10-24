@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jczb.checkpoint"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <!-- 允许读取手机状态权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许读取写入用户个人数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+    <!-- 获取sd卡读写的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 获取应用随系统启动自动启动的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>  
+    <!-- 锁定屏幕，横屏不让使用 -->
+    <!-- 获取手机网络权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>  
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:name=".ui.GlobalVariable"
+        android:allowBackup="true"
+        android:icon="@drawable/login"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity android:name=".ui.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity  android:name=".ui.Scandesk"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".ui.MainActivity" >
+        </activity>
+        <activity android:name=".ui.UploadActivity" >
+        </activity>
+        <activity android:name=".ui.DownloadActivity" >
+        </activity>
+        <activity android:name=".ui.UpDownLoadActivity" >
+        </activity>
+        <activity android:name=".ui.SettingsActivity" >
+        </activity>
+        <activity android:name=".ui.SpotcheckQueryActivity" >
+        </activity>
+        <activity android:name=".ui.ManualScanActivity" >
+        </activity>
+        <activity android:name=".ui.QRCodeScanActivity" >
+        </activity>
+        <activity android:name=".ui.ScanActivity" >
+        </activity>
+        <activity android:name=".ui.ListViewActivity" >
+        </activity>
+        <activity
+            android:name=".ui.QueryCertificateActivity"
+            android:label="@string/title_activity_query_certificate" >
+        </activity>
+        <activity
+            android:name="com.jczb.checkpoint.ui.ProductInfoActivity"
+            android:label="@string/title_activity_product_info" >
+        </activity>
+        <activity
+            android:name="com.jczb.checkpoint.ui.QueryDownloadListActivity">
+        </activity>
+        <activity 
+            android:name="com.jczb.checkpoint.ui.AnbiaoDetailShowActivity"></activity>
+       	<!-- <activity android:name="com.jczb.checkpoint.ui.GlobalVariable"></activity> -->
+        
+    </application>
+
+</manifest>

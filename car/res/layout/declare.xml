@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+         style="@style/top_title_style">
+          
+          <!-- 尖括号的布局 -->
+          <ImageButton
+                android:id="@+id/declare_back"
+                android:layout_width="14dp"
+                android:layout_height="25.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back" />
+
+         <!-- 免责声明 -->
+          <TextView
+             android:text="免责声明"
+             style="@style/top_title_word_style"/>
+          <TextView
+                android:layout_width="14dp"
+                android:layout_height="25.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+ </LinearLayout>
+ 
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/declare_title_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="免责声明"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="（1）北京正则阳光文化传播有限公司对于任何自本APP而获得的他人的信息、内容或者广告宣传等任何资讯（以下统称“信息”），不保证真实、准确和完整性。如果任何单位或者个人通过上述“信息”而进行任何行为，须自行甄别真伪和谨慎预防风险，否则，无论何种原因，本APP不对任何非与本APP直接发生的交易和或行为承担任何直接、间接、附带或衍生的损失和责任。"
+                        android:textSize="20sp" />
+                    
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="（2）北京正则阳光文化传播有限公司有权但无义务，改善或更正本APP任何部分之任何疏漏、错误。"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="（3）北京正则阳光文化传播有限公司不保证（包括但不限于）："
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="a.本APP适合用户的使用要求；"
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="b.本APP不受干扰，及时、安全、可靠或不出现错误"
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="c.用户经由本APP取得的任何产品、服务或其他材料符合用户的期望。"
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="（4）用户使用经由本APP下载的或取得的任何资料，其风险自行负担；因该等使用导致用户电脑系统损坏或资料流失，用户应负完全责任；"
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="（5）基于以下原因而造成的利润、商业信誉、资料损失或其他有形或无形损失，北京正则阳光文化传播有限公司不承担任何直接、间接、附带、衍生或惩罚性的赔偿："
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_aa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="a.本APP使用或无法使用；"
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_bb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="b.经由本APP购买或取得的任何产品、资料或服务；"
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_cc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="c.用户资料遭到未授权的使用或修改；"
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_dd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="d.其他与本APP相关的事宜。"
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="（6）用户在浏览互联网时自行判断使用本APP的搜索或检索目录。该搜索或检索目录可能会引导用户进入到被认为具有攻击性或不适当的内容，北京正则阳光文化传播有限公司没有义务查看检索目录所列APP的内容，因此，对其正确性、合法性、正当性不负任何责任。"
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_seven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="第三方责任"
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/declare_details_eight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="由于用户经由本APP上载或发布内容、与本APP连线、违反本服务条款或侵害其他人的任何权利导致任何第三人提出权利主张，用户同意赔偿北京正则阳光文化传播有限公司及其分公司、关联公司、代理人或其他合作伙伴及员工，并使其免受损害。"
+                        android:textSize="20sp" />
+                   
+                </LinearLayout>
+                
+                
+                
+          
+           </LinearLayout>
+           
+        
+   </ScrollView>
+    
+
+</LinearLayout>

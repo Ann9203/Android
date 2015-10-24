@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <!-- 我的评论页，采用ListView套ListView的方法？？ -->
+    <!-- 还有我的评论页的模板页：myevaluation_item.xml-->
+
+    <ListView
+        android:id="@+id/lv_myEvaluation_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

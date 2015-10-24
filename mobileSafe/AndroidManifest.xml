@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itheima.mobileSafe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>   
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+     <uses-permission android:name="android.permission.GET_TASKS"/>
+     <uses-permission android:name="android.permission.READ_SMS"/>
+     <uses-permission android:name="android.permission.SEND_SMS"/>
+     <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+     <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+     <uses-permission android:name="android.permission.WRITE_SMS"/>
+     <uses-permission android:name="android.permission.READ_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">"
+        <activity
+            android:name="com.itheima.mobileSafe.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.itheima.mobileSafe.HomeActivity"
+            >
+    
+        </activity>
+        <activity
+            android:name="com.itheima.mobileSafe.SettingActivity"
+            >
+    
+        </activity>
+       <activity android:name="com.itheima.mobileSafe.SafeActivity"> </activity>
+        <activity android:name="com.itheima.mobileSafe.SetSafe2Activity"> </activity>
+         <activity android:name="com.itheima.mobileSafe.SetSafe3Activity"> </activity>
+          <activity android:name="com.itheima.mobileSafe.SetSafe4Activity"> </activity>
+           <activity android:name="com.itheima.mobileSafe.ShowSafeActivity"> </activity>
+           <activity android:name="com.itheima.mobileSafe.ContactActivity"> </activity>
+           <activity android:name="com.itheima.mobileSafe.AdvancedToolsActivity"></activity>
+           <activity android:name="com.itheima.mobileSafe.QueryLocationActivity"></activity>
+           <activity android:name="com.itheima.mobileSafe.AttributeLocalActivity"></activity>
+           <activity android:name="com.itheima.mobileSafe.BlackNumActivity"></activity>
+           <activity android:name="com.itheima.mobileSafe.SoftManagerActivity"></activity>
+           <activity android:name="com.itheima.mobileSafe.TaskManagerActivity"></activity>
+           <activity android:name="com.itheima.mobileSafe.AntVirusActivity"></activity>
+           <activity android:name="com.itheima.mobileSafe.ClearCacheActivity"></activity>
+          <activity android:name="com.itheima.mobileSafe.WatchDogActivity"
+              android:launchMode="singleInstance"
+              android:excludeFromRecents="true"
+              ></activity>
+           <receiver android:name="com.itheima.Reservice.SIMChangeReserver">
+              
+               <intent-filter android:priority="1000">
+                   <action android:name="android.intent.action.BOOT_COMPLETED"/>
+               </intent-filter>
+           </receiver>
+           <receiver android:name="com.itheima.Reservice.CommandMSGReservice">
+               <intent-filter android:priority="1000">
+                    <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+               </intent-filter>
+           </receiver>
+            <receiver
+            android:name="com.itheima.Reservice.Admin"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.itheima.Reservice.MyWidget">
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data 
+                android:name="android.appwidget.provider"
+                android:resource="@xml/example_appwidget_info"
+                />
+        </receiver>
+           <service android:name="com.itheima.server.GPSService"></service>
+        <service android:name="com.itheima.server.CallLocationServer"></service>
+        <service android:name="com.itheima.server.BlackNumServer"></service>
+        <service android:name="com.itheima.server.MyWidgetServer"></service>
+        <service android:name="com.itheima.server.WatchDogServer"></service>
+    </application>
+
+</manifest>

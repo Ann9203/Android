@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+ 
+
+    <LinearLayout
+         style="@style/top_title_style" >
+
+
+        <!-- 尖括号的布局 -->
+
+        <ImageButton
+            android:id="@+id/my_clan_back"
+            android:layout_width="14dp"
+            android:layout_height="25.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back" />
+
+        <!-- 用户中心布局 -->
+
+         <TextView
+             android:text="用户中心"
+             style="@style/top_title_word_style"/>
+         <TextView
+                android:layout_width="14dp"
+                android:layout_height="25.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="我的部落"
+        android:textColor="#01AFD2"
+        android:textSize="25sp" />
+
+    <View style="@style/PersonalLine" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            style="@style/operation_bar_style"
+            android:layout_height="325dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/my_collect_user_center"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/my_collect_usercenter"
+                    android:text="我的收藏"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    style="@style/operation_bar_button_style"
+                    android:background="@drawable/product_list_more" />
+            </RelativeLayout>
+
+            <View
+                style="@style/PersonalLine"
+                android:layout_width="317dp" />
+
+            <RelativeLayout
+                android:id="@+id/my_comment_user_center"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/my_comment_usercenter"
+                    android:text="我的评论"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    style="@style/operation_bar_button_style"
+                    android:background="@drawable/product_list_more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </RelativeLayout>
+
+            <View style="@style/PersonalLine" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

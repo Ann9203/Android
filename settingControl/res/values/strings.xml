@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">settingControl</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="updatetitle">更新提示</string>
+    <string name="updatedes">开启更新提示</string>
+
+</resources>

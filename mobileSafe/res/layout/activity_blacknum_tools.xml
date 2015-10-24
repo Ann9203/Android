@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_blacknum_tools_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="123456"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_blacknum_tools_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_blacknum_tools_phone"
+        android:layout_marginLeft="8dp"
+        android:text="短信拦截"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_blacknum_tools_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_blacknum_tools_style"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/button_delete" />
+
+</RelativeLayout>

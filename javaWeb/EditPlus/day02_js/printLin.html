@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <script type="text/javascript">
+	/*
+		打印一个菱形
+		思路：
+			菱形是由两个正倒三角形拼接形成饿的
+			1.定义要打印最多的元素 m，判断这个菱形有多少行 row
+			2.定义一个变量，为中间的行数mid
+			3.在for循环的时候如果，循环的行数小宇mid的话打印的就是正三角形，如果大于mid的话打印的是倒三角形
+	*/
+	var m=10;
+	var row=(2*m-1);
+	var mid=row/2+1;
+	//定义一个第三方变量
+	var c=0;
+	for(var i=0;i<row;i++)
+	{
+		if(i<mid)
+		{
+			c=i;
+		}else
+		{
+			c=row-i+1;
+		}
+		for(var z=1;z<=mid-c;z++)
+		{
+			document.write(" &nbsp")
+		}
+		for(var h=1;h<=2*c-3;h++)
+		{
+			document.write("* ");
+		}
+		document.write("<br/>");
+	}
+ </script>
+ <body>
+  
+ </body>
+</html>

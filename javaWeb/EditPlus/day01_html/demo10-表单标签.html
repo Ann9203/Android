@@ -1,0 +1,106 @@
+<html>
+ <head>
+  <title>表单标签</title>
+  <style type="text/css">
+	 fieldset{
+		width:650px;
+		text-align:left;
+	 }
+	 form{
+		text-align:center;
+	 }
+	 body{
+		font-family:"楷体";
+	 }
+	 legend{
+		font-weight:bold;
+		color:red;
+	 }
+	 #username{
+		margin-left:15px;
+	 }
+	 #password{
+		margin-left:30px;
+	 }
+	 .btn{
+		background-color:lightblue;
+		width:50px;
+		height:30px;
+		border:0px solid white;
+	 }
+  </style>
+ </head>
+ <body>
+	<!--
+		表单标签：
+			form：表示一个表单
+				属性有：
+					action：提交的地址（请求的地址）
+					method：请求的方式。不只两种（我们只需要掌握两种）
+								GET：表单中的内容都会显示到地址栏中。弊端：1不安全。2数据长度有限制。
+								POST：表单中的内容不会显示在地址栏中，相对get更安全，数据长度也没有限制了。
+					enctype：表单正文的编码类型。（有默认值，当改变时是用于文件上传）
+			input：表单的输入域标签
+				 属性有：
+					type：输入域的类型(有默认值，默认值是文本框）
+						  取值：
+							text,password
+							radio,checkbox
+							submit,reset
+							image,button
+							file,hidden
+							注意：
+								radio中只有name属性相同时，才表示一组内容
+								checkbox中也是name属性相同时，才表示一组内容
+								radio和checkbox的默认选中checked
+					value：设置或者显示表单输入域的内容
+					name：表单输入域的名称。只有表单输入域包含name属性的时候，才会被提交
+			 select：下拉列表标签
+					属性有：
+						name:下拉列表的名称（注意:提交时，是提交的列表项）
+			 option：下拉列表选择项标签
+					属性有：
+						value：提交的下拉列表项的值
+					注意：下拉列表项的默认选中selected
+			textarea：文本域标签
+					属性有：
+						rows：显示的字符行数
+						cols：显示的字符列数
+
+		以下内容，了解即可：
+			fieldset：语义化标签
+			legend：语义化说明标签
+				
+	-->
+	<form action="demo4-图像标签.html" method="get">
+		<fieldset><legend>用户必填信息</legend>
+		用户名：<input type="text" name="username" id="username"/><br/>
+		密码：<input type="password" name="password"  id="password"/><br/>
+		确认密码：<input type="password" name="password1"/><br/>
+		性别：<input type="radio" name="sex" value="male" />男
+			  <input type="radio" name="sex" value="female" checked />女<br/>
+		兴趣爱好：
+				<input type="checkbox" name="hobby" />吃饭
+				<input type="checkbox" name="hobby" />睡觉
+				<input type="checkbox" name="hobby" checked/>写代码<br/>
+		</fieldset>
+		<fieldset><legend>用户选填信息</legend>
+		选择头像：<input type="file" name="photo" /><br/>
+		头像预览:&nbsp;<input type="image" src="resource/1.jpg" width="100px" height="100px"/><br/>
+		联系方式：<input type="text" name="linkage"/><br/>
+		电子邮箱：<input type="text" name="email"/><br/>
+		选择城市：
+				<select name="city">
+					<option value="bj">北京</option>
+					<option value="sd">山东</option>
+					<option value="hb" selected>河北</option>
+					<option value="ah">安徽</option>
+				</select><br/>
+		自我介绍：<textarea name="description" rows="5" cols="25"></textarea><br/>
+		</fieldset><br/>
+		<input type="hidden" name="hdn" value="隐藏的" />
+		<input type="submit" value="提交" class="btn" />
+		<input type="reset" value="重置" class="btn"/>
+	</form>
+ </body>
+</html>

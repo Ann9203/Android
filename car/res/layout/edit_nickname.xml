@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+           style="@style/top_title_style">
+          
+          <!-- 尖括号的布局 -->
+
+          
+            <ImageButton
+                android:id="@+id/edit_nickname_back"
+                android:layout_width="14dp"
+                android:layout_height="25.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back" />
+
+         <!-- 修改昵称布局 -->
+
+            <TextView
+               style="@style/top_title_word_style"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="95dp"
+                android:text="修改昵称"
+                />
+
+         <!-- 确定的布局 -->
+
+         <TextView
+             android:id="@+id/nickname_confirm"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:paddingLeft="60dp"
+             android:layout_marginTop="2dp"
+             android:paddingRight="10dp"
+             android:gravity="center"
+             android:text="确定"
+             android:textColor="#FFFFFF"
+             android:textSize="20sp" />
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+            
+               style="@style/operation_bar_style"
+               android:layout_height="46dp"
+               android:orientation="vertical" >
+               
+               <RelativeLayout
+                   
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="20dp"
+                   android:orientation="horizontal" >
+         
+                  
+         <EditText
+            android:id="@+id/tv_oldNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/edit_nickname"
+            android:hint="请输入原昵称"
+            android:textColor="#BEBEBE"
+            android:textSize="20sp" />
+       </RelativeLayout>
+      </LinearLayout>
+      <View style="@style/PersonalLine" />
+      <LinearLayout
+            
+               style="@style/operation_bar_style"
+               android:layout_height="46dp"
+               android:orientation="vertical" >
+               
+               <RelativeLayout
+                  
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="20dp"
+                   android:orientation="horizontal" >
+         
+                  
+         <EditText
+            android:id="@+id/tv_newNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/edit_nickname"
+            android:hint="请输入新昵称" 
+            android:textColor="#BEBEBE"
+            android:textSize="20sp"/>
+       </RelativeLayout>
+      </LinearLayout>
+      <View style="@style/PersonalLine" />
+      <LinearLayout
+            
+               style="@style/operation_bar_style"
+               android:layout_height="46dp"
+               android:orientation="vertical" >
+               
+               <RelativeLayout
+                  
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="20dp"
+                   android:orientation="horizontal" >
+         
+                  
+         <EditText
+            android:id="@+id/tv_confirmNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/edit_nickname"
+            android:hint="确认新昵称" 
+            android:textColor="#BEBEBE"
+            android:textSize="20sp"/>
+       </RelativeLayout>
+      </LinearLayout>
+      <View style="@style/PersonalLine" />
+      
+   
+    
+
+</LinearLayout>

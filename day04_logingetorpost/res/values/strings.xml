@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">day04_logingetorpost</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="记住密码">记住密码</string>
+    <string name="password">请输入密码</string>
+    <string name="_1_">请输入用户1名</string>
+    <string name="login">Login</string>
+
+</resources>

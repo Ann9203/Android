@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jsObject.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=GBK">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <script type="text/javascript">
+    
+    	function showTime()
+    	{
+    		var objDaye=new Date();
+    		var year=objDaye.getFullYear();
+    		var month=objDaye.getMonth();
+    		var day=objDaye.getDay();
+    		var hour=objDaye.getHours();
+    		var m=objDaye.getMinutes();
+    		var str=year+"年"+month+"月"+day+"日      "+hour+"："+m;
+    		document.getElementById("date").value=str;
+    		
+    	}
+    </script>
+
+  </head>
+  
+  <body>
+    <input type="text" id="date" onclick="showTime()"/>
+  </body>
+</html>

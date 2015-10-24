@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#aa000000"
+    >
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_attributelocal_local"
+        android:background="@drawable/call_locate_green"
+        android:orientation="horizontal"
+        android:gravity="center"
+        
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="双击居中"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            
+            />
+        
+    </LinearLayout>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按住提示框拖到任意位置\n按手机返回键立即生效"
+        android:layout_alignParentTop="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/call_locate_orange"
+        android:id="@+id/tv_local_top"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按住提示框拖到任意位置\n按手机返回键立即生效"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/call_locate_orange"
+        android:id="@+id/tv_local_bottom"
+        />
+
+</RelativeLayout>

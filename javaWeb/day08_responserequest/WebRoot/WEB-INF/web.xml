@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RsponseDemo1</servlet-name>
+    <servlet-class>com.itheima.response.RsponseDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResponseDemo2</servlet-name>
+    <servlet-class>com.itheima.response.ResponseDemo2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResponseDemo3</servlet-name>
+    <servlet-class>com.itheima.response.ResponseDemo3</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResponseDemo4</servlet-name>
+    <servlet-class>com.itheima.response.ResponseDemo4</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResponseDemo5</servlet-name>
+    <servlet-class>com.itheima.response.ResponseDemo5</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResponseDemo6</servlet-name>
+    <servlet-class>com.itheima.response.ResponseDemo6</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResponseDemo7</servlet-name>
+    <servlet-class>com.itheima.response.ResponseDemo7</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResponseDemo8</servlet-name>
+    <servlet-class>com.itheima.response.ResponseDemo8</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequestDemo1</servlet-name>
+    <servlet-class>com.itheima.Request.RequestDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequestDemo2</servlet-name>
+    <servlet-class>com.itheima.Request.RequestDemo2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequestDemo3</servlet-name>
+    <servlet-class>com.itheima.Request.RequestDemo3</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>RsponseDemo1</servlet-name>
+    <url-pattern>/RsponseDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo2</servlet-name>
+    <url-pattern>/servlet/ResponseDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo3</servlet-name>
+    <url-pattern>/servlet/ResponseDemo3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo4</servlet-name>
+    <url-pattern>/servlet/ResponseDemo4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo5</servlet-name>
+    <url-pattern>/servlet/ResponseDemo5</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo6</servlet-name>
+    <url-pattern>/servlet/ResponseDemo6</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo7</servlet-name>
+    <url-pattern>/servlet/ResponseDemo7</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo8</servlet-name>
+    <url-pattern>/servlet/ResponseDemo8</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestDemo1</servlet-name>
+    <url-pattern>/servlet/RequestDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestDemo2</servlet-name>
+    <url-pattern>/servlet/RequestDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestDemo3</servlet-name>
+    <url-pattern>/servlet/RequestDemo3</url-pattern>
+  </servlet-mapping>
+
+</web-app>

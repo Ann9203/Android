@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+    
+	<style name="Theme.NoTitleBar" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item> 
+    </style>
+    
+    <style name="main_head_title">
+        <item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">@dimen/text_size_19</item>
+		<item name="android:textColor">@color/head_text</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:shadowColor">#ffffffff</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="footbar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>  
+        <item name="android:button">@null</item>  
+        <item name="android:paddingTop">@dimen/space_1</item>
+        <item name="android:paddingBottom">@dimen/space_3</item>
+    </style>
+    
+    <style name="main_footbar_radio" parent="footbar">
+        <item name="android:background">@drawable/widget_bar_bg</item>
+        <item name="android:padding">0dip</item>
+    </style>
+    
+    <style name="loading_small" parent="@android:style/Widget.ProgressBar.Small">
+		<item name="android:indeterminateDrawable">@anim/loading</item>
+		<item name="android:layout_width">21dip</item> 
+		<item name="android:layout_height">21dip</item>
+		<item name="android:layout_gravity">center_vertical</item>
+	</style>
+	
+	<style name="main_footbar_cutline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="main_footbar_image">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/widget_bar_bg</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+    <style name="ButtonBarButton" />    
+    <!-- 频道管理，返回按钮样式 -->
+    <style name="back_view" >
+        <item name="android:gravity">right|center</item>
+        <item name="android:background">@drawable/transparent</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+        <item name="android:minHeight">44.0dip</item>
+        <item name="android:text">@null</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawableLeft">@drawable/btn_back</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    
+
+    <style name="list_notify_view">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/bg_notify</item>
+        <item name="android:minHeight">25.0dip</item>
+    </style>
+    
+    <style name="notify_view_divider">
+        <item name="android:background">@color/notify_view_divider</item>
+    </style>
+    
+    <style name="list_notify_cancel_btn">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/list_notify_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:minWidth">45.0dip</item>
+        <item name="android:text">"撤消"</item>
+    </style>
+    
+     <style name="operation_bar_style">       
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#F5F5F5</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:minHeight">40.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingTop">10.0dip</item>        
+    </style>
+    
+      <style name="operation_bar_button_style">       
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_centerVertical">true</item>                    
+    </style>
+    
+      <style name="PersonalLine">
+        <item name="android:background">#ffcccccc</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+
+    <!-- 下拉刷新列表样式 -->
+      <style name="widget_listview">
+        <item name="android:layout_width">fill_parent</item>
+   		<item name="android:layout_height">fill_parent</item>
+       	<item name="android:layout_weight">1</item>      	
+       	<item name="android:listSelector">@drawable/listview_item_selector</item>
+       	<item name="android:divider">@drawable/listview_divider_line</item>
+       	<item name="android:dividerHeight">1.0dip</item>
+       	<item name="android:fadingEdge">none</item>
+       	<item name="android:scrollingCache">false</item>
+    </style>
+
+    <style name="operation_bar_word_style">       
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>              
+    </style>
+<!--     搜索按钮风格 -->
+    <style name="frame_button">
+        <item name="android:layout_width">fill_parent</item>
+   		<item name="android:layout_height">fill_parent</item>
+       	<item name="android:layout_weight">1</item>
+       	<item name="android:background">@drawable/frame_button_bg</item>
+       	<item name="android:textColor">@color/frame_button_text_light</item>
+    </style>
+    
+    <!-- 搜索列表样式 -->
+    <style name="search_listview">
+        <item name="android:layout_width">fill_parent</item>
+   		<item name="android:layout_height">fill_parent</item>
+       	<item name="android:layout_weight">1</item>      	
+       	<item name="android:listSelector">@drawable/listview_item_selector</item>
+       	<item name="android:divider">@drawable/listview_divider_line</item>
+       	<item name="android:dividerHeight">1.0dip</item>
+       	<item name="android:fadingEdge">none</item>
+       	<item name="android:scrollingCache">false</item>
+    </style>
+    
+     <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+       <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+ <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+ <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+ <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+ <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+ <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+ <!-- 模糊 -->
+    </style>
+
+    
+</resources>

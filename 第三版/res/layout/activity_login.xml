@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Title图片 -->
+
+    <ImageView
+        android:id="@+id/login_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_title_img" />
+
+    <ImageView
+        android:id="@+id/login_top_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_top_img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:layout_weight="0.55"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/PersonalMainLayoutStyle"
+            android:layout_width="match_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:padding="10sp" >
+
+                <TextView
+                    android:id="@+id/tv_loginaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loginacount"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <EditText
+                    android:id="@+id/loginaccount_id"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/inputaccount"
+                    android:padding="5.0dip"
+                    android:paddingRight="30dp"
+                    android:textColor="#ff3b3b3b"
+                    android:textSize="16.0sp" 
+                    android:text="lc">
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <View style="@style/PersonalLine" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:padding="10sp" >
+
+                <TextView
+                    android:id="@+id/tv_loginpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loginpassword"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <EditText
+                    android:id="@+id/loginpassword_id"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/inputpassword"
+                    android:inputType="textPassword"
+                    android:padding="5.0dip"
+                    android:paddingRight="30dp"
+                    android:textColor="#ff3b3b3b"
+                    android:textSize="16.0sp" 
+                    android:text="lc"/>
+            </LinearLayout>
+
+            <View style="@style/PersonalLine" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/android_title_bg"
+            android:gravity="center"
+            android:text="@string/login_btn"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

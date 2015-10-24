@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+
+  <title>二级城市联动</title>
+  <script type="text/javascript">
+		var cityList = new Array();
+    	cityList['北京市'] = ['朝阳区','东城区','西城区', '海淀区','宣武区','丰台区','怀柔','延庆','房山'];
+		cityList['上海市'] = ['宝山区','长宁区','丰贤区', '虹口区','黄浦区','青浦区','南汇区','徐汇区','卢湾区'];
+		cityList['广州省'] = ['广州市','惠州市','汕头市','珠海市','佛山市','中山市','东莞市'];
+    	cityList['深圳市'] = ['福田区', '罗湖区', '盐田区', '宝安区', '龙岗区', '南山区', '深圳周边'];
+		cityList['重庆市'] = ['俞中区', '南岸区', '江北区', '沙坪坝区', '九龙坡区', '渝北区', '大渡口区', '北碚区'];
+    	cityList['天津市'] = ['和平区', '河西区', '南开区', '河北区', '河东区', '红桥区', '塘古区', '开发区'];
+		cityList['江苏省'] = ['南京市','苏州市','无锡市'];
+		cityList['浙江省'] = ['杭州市','宁波市','温州市'];
+		cityList['四川省'] = ['四川省','成都市'];
+		cityList['海南省'] = ['海口市'];
+		cityList['福建省'] = ['福州市','厦门市','泉州市','漳州市'];
+		cityList['山东省'] = ['济南市','青岛市','烟台市'];
+		cityList['江西省'] = ['江西省','南昌市'];
+		cityList['广西省'] = ['柳州市','南宁市'];
+		cityList['安徽省'] = ['安徽省','合肥市'];
+		cityList['河北省'] = ['邯郸市','石家庄市'];
+		cityList['河南省'] = ['郑州市','洛阳市'];
+		cityList['湖北省'] = ['武汉市','宜昌市'];
+		cityList['湖南省'] = ['湖南省','长沙市'];
+		cityList['陕西省'] = ['陕西省','西安市'];
+		cityList['山西省'] = ['山西省','太原市'];
+		cityList['黑龙江省'] = ['黑龙江省','哈尔滨市'];
+		cityList['其他'] = ['其他'];	
+		//二级联动的城市，省份是在加载的时候就加载上了 location :与地址栏相关的href
+		window.onload=function(){
+			var city=document.getElementById("city");
+			//增强for循环 这个的写法要加一个in不是“：”
+			for(var i in cityList)
+			{
+				city.add(new Option(i,i));
+			}
+		}
+		
+
+		/*
+			二级城市联动
+			思路：
+				1.城市是通过数组来存储的
+				2.首先是要获取省份的id值，然后再将这个二维数组添加到city这个控件中
+				3.获取省份之后，要根据二维数组中的下标来获取相对应的城市
+				4.然后将这个获取到的城市添加到控件中
+				5.但是需要注意的是：如果换省份的话，那么这个城市的控件中的长度要变为0，
+					然后重新加载内容
+		*/
+		function cityselect()
+		{
+			//alert(1);
+			//1.先获取省份这个空间
+			var country=document.getElementById("country");
+			//获取city中所选中的Value值
+			var city=document.getElementById("city").value;
+				alert(city);
+			country.length=1;
+			//如果选择的是“请选择省份的话”就要弹出请选择城市，然后把city那一栏的长度
+			//为1
+			if(city=="---请选择省份---")
+			{
+				alert("请选择所对应的城市");
+				return;
+				
+			}
+			
+			//alert(cityList[city])，因为是个二维数组，通过cityList[city]可以找出这个下标所对应的第二维数组的元素
+
+			//这个for循环循环的其实是对应城市省份的长队
+			for(var i=0;i<cityList[city].length;i++)
+			{
+				//添加也是添加的是二维数组中最低维数组的长度
+				country.add(new Option(cityList[city][i],i))
+				
+			}
+			
+
+				
+			
+		}
+  </script>
+ </head>
+ <body>
+	<select id="city" onChange="cityselect()">
+		<option  value="_NaN">---请选择省份---</option>
+	</select>
+	<select id="country">
+		<option >---请选择城市---</option>
+	</select>
+ </body>
+</html>

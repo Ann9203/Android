@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView 
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/iv_taskmanager_icon"
+        android:src="@drawable/ic_launcher"
+        
+        />
+    <TextView
+        android:id="@+id/tv_taskmanager_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="手机卫士"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/iv_taskmanager_icon"
+         />
+
+    <TextView
+        
+        android:id="@+id/tv_taskmanager_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_taskmanager_name"
+        android:layout_marginLeft="8dp"
+        android:text="内存占用："
+        android:layout_toRightOf="@+id/iv_taskmanager_icon"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/ch_taskmanager_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_taskmanager_size"
+        android:layout_alignBottom="@+id/tv_taskmanager_size"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:clickable="false"
+         />
+
+</RelativeLayout>

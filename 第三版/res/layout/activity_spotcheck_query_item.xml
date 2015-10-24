@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    
+    <LinearLayout 
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+        
+        <TextView 
+            android:id="@+id/put_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:gravity="center"
+            android:text="煤矿名称："
+            android:textSize="14sp"/>
+        <TextView 
+            android:id="@+id/put_product_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:gravity="center"
+            android:text="EPC编号："
+            android:textSize="14sp"/>
+        <TextView 
+            android:id="@+id/put_enterprise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:gravity="center"
+            android:text="抽查结果："
+            android:textSize="14sp"/>
+        <TextView 
+            android:id="@+id/checkdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:gravity="center"
+            android:text="抽查日期："
+            android:textSize="14sp"/>
+      <TextView 
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:gravity="center"
+            android:text="上传状态："
+            android:textSize="14sp"/>
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">        
+        <TextView
+            android:id="@+id/txtMeikuangname" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/txtErpCode" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/txtCheckResult" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/txtCheckDate" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/txtState" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:textSize="12sp"/>
+        
+    </LinearLayout>
+   
+	<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_weight="0.2"
+		    android:layout_height="120dp"
+		    android:layout_marginTop="10dp"
+		    android:orientation="horizontal">
+		    <ImageView 
+		        android:id="@+id/enter_id"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/android_list_idex"
+		        android:layout_gravity="center_vertical"/>
+		</LinearLayout>
+    
+<!--     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+	    android:orientation="horizontal">
+	    发放公司
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="15dp"
+	        android:layout_weight="0.5"/>
+        左侧大字体
+    	<TextView
+	        android:id="@+id/left_big_words_id"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.5"
+     	    android:layout_marginTop="5dp"
+     	    android:layout_marginLeft="5dp"
+	        android:text="@string/company_name"
+	        android:textSize="15sp"
+	        android:textColor="@color/black" />
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:layout_marginTop="10dp"
+	    android:orientation="vertical">
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    右侧上小字体
+		    <TextView 
+	        android:id="@+id/right_above_words_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/epc_num"
+	        android:textSize="12sp"
+	        android:textColor="@color/black"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+	        
+	        右侧左下方小字体
+		    <TextView 
+		        android:id="@+id/right_below_leftwords_id"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/date_str"
+		        android:textSize="12sp"
+		        android:textColor="@color/black"/>
+		    右侧右下方小字体
+		    <TextView 
+		        android:id="@+id/right_below_rightwords_id"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/upload"
+		        android:textSize="12sp"
+		        android:textColor="@color/green"/>
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_weight="0.3"
+	    android:layout_height="30dp"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal">
+	    <ImageView 
+	        android:id="@+id/enter_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/android_list_idex"
+	        android:layout_gravity="center_vertical"/>
+	</LinearLayout> -->
+    
+</LinearLayout>

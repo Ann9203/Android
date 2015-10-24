@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">car</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_home">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_discovery">Discovery</string>
+    <string name="title_activity_mine">Mine</string>
+    <string name="edit_password">EditPassword</string>
+    <string name="my_clan">MyClan</string>
+    <string name="about_us">AboutUs</string>
+    <string name="modify_password">ModifyPassword</string>
+    <string name="edit_nickname">EditNickname</string>
+    <string name="version_details">VersionDetails</string>
+    <string name="version_info">VersionInfo</string>
+    <string name="category_home">首页</string>
+    <string name="category_discovery">发现</string>
+    <string name="category_mine">我的</string>
+   
+    
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_update">最近更新：</string>
+	
+    <!-- 首页 zhanghui -->
+    <string name="home_news_love">收藏</string>
+    
+    <!-- 评论页 Item样式 zhanghui -->
+    <string name="evaluation_replay">回复</string>
+    
+    
+    <!-- 吴利昌添加 -->
+    <string name="login_str">登录</string>
+    <string name="search_key_str">搜索关键字</string>
+    <string name="hot_channels_str">热门儿</string>
+    <string name="search_description_iv">搜索图片描述</string>
+    <string name="new_car">新车</string>
+    <string name="game">赛事</string>
+    <string name="interview">访谈</string>
+    <string name="reset_password_str">重置密码</string>
+    <string name="cellphone_mail_hint">请输入你注册时填写的手机号码或邮箱</string>
+    <string name="inputcode_hint">请输入手机短信中的验证码</string>
+    <string name="input_newpwd_hint">请输入新密码</string>
+    <string name="confirm">确定</string>
+    <string name="num">次</string>
+    <!-- 丁国华添加 -->
+    <string name="input_key_words">输入关键字</string>
+    <string name="soft">软件</string>
+    <string name="answer">问答</string>
+    <string name="blog">博客</string>
+    <string name="news">新闻</string>
+    <string name="code">代码</string>
+</resources>

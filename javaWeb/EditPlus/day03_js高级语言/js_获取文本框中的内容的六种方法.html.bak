@@ -1,0 +1,28 @@
+
+<html lang="en">
+ <head>
+  <title>获取文件的内容的六中方法</title>
+ 
+  
+ </head>
+ <body>
+  <div>北京欢迎您</div>
+   <script type="text/javascript">
+	/*
+		获取文本中的内容，主要是由六种方法
+		根据上午所讲的节点，父节点，子节点，来由InnerHteml  innerText这些方法来获取
+	*/
+	var hr=document.getElementsByTagName("div")[0];
+	/*alert(hr.innerHTML);
+	alert(hr.innerText);
+	alert(hr.firstChild.nodeValue);
+	alert(hr.lastChild.nodeValue);*/
+	alert(hr.childNodes[0].nodeValue);
+	alert(hr.textContent);
+	alert(hr.textContent);
+	
+
+  </script>
+  
+ </body>
+</html>

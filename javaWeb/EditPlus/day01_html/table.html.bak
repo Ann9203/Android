@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ <!--
+	cellpadding:只能放在table中还有cellspacing
+ -->
+	<table  border="1" style="width:300px;height:200px;"cellpadding="60px" >
+   		<tr>
+   			
+   			<th rowspan="6">学生信息</th>
+   			<th colspan="3">学生信息</th>
+   			<th rowspan="6">学生信息</th>
+   		
+   		</tr>
+   		<tr  >
+   			<td >姓名</td>
+   			<td>年龄</td>
+   			<td>性别</td>  		
+   		</tr>
+   		<tr>
+   			<td>李四</td>
+   			<td>12</td>
+   			<td>女</td>
+   		</tr>
+   		<tr>
+   			<td>王五</td>
+   			<td>23</td>
+   			<td>男</td>
+   		</tr>
+   		<tr>
+   			<td>赵六</td>
+   			<td>24</td>
+   			<td>女</td>
+   		</tr>
+   		<tr>
+   			<td>小明</td>
+   			<td>22</td>
+   			<td>男</td>
+   		</tr>
+   	</table>
+ </body>
+</html>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 我的评论模板页 -->
+    <!-- 分割线上面带车图片的部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:orientation="horizontal" >
+
+        <!-- 左边的车图片 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_myEvaluation_carImg_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- 右边的一堆 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical" >
+
+            <!-- 带新车和新闻标题的部分 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_isNewCar_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新车"
+                    android:background="@color/light_orange"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_newsTitle_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- 带播放、评论和分享的部分 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- 这个图片需要改一下，暂时没有 -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/share_cheduanzi" />
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_videoNum_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:text="@string/num" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_comment_usercenter" />
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_evaluationNum_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/share_cheduanzi" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 分割线下面具体的评论部分 -->
+    <!-- 目前对于这块的评论没有什么好处理的办法（最差劲的是用ListView套ListView） -->
+    <!-- 现在想到的一个方法是：由于用户一般对同一个新闻不会过多的评论 -->
+    <!-- 所以默认在模板中给出5条，然后在Java代码中判断 -->
+    <!-- 如果只有4条评论则让第5评论的控件隐藏，依次类推。如果多余5条评论就无法处理了 -->
+    <!-- 所以需要在对同一条新闻添加评论的时候判断，不要超过5条 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 第1条评论 -->
+
+        <LinearLayout
+            android:id="@+id/rl_myEvaluation_id1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2" >
+
+                <ImageView
+                    android:id="@+id/iv_myEvaluation_headImg_id1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_Evaluation1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 第2条评论 -->
+
+        <LinearLayout
+            android:id="@+id/rl_myEvaluation_id2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2" >
+
+                <ImageView
+                    android:id="@+id/iv_myEvaluation_headImg_id2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_Evaluation2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 第3条评论 -->
+
+        <LinearLayout
+            android:id="@+id/rl_myEvaluation_id3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2" >
+
+                <ImageView
+                    android:id="@+id/iv_myEvaluation_headImg_id3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_Evaluation3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_date3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 第4条评论 -->
+
+        <LinearLayout
+            android:id="@+id/rl_myEvaluation_id4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2" >
+
+                <ImageView
+                    android:id="@+id/iv_myEvaluation_headImg_id4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_Evaluation4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_myEvaluation_date4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 第5条评论 -->
+
+    <LinearLayout
+        android:id="@+id/rl_myEvaluation_id5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" >
+
+            <ImageView
+                android:id="@+id/iv_myEvaluation_headImg_id5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_myEvaluation_Evaluation5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_myEvaluation_date5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

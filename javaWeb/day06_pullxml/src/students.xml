@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<Students>
+	<Student id="2342">
+		<name>小鹏</name>
+		<sex>男</sex>
+		<chinese>85</chinese>
+		<english>77</english>
+		<math>67</math>
+	</Student>
+	<Student id="2343">
+		<name>小明</name>
+		<sex>男</sex>
+		<chinese>34</chinese>
+		<english>22</english>
+		<math>19</math>
+	</Student>
+	<Student id="2345">
+		<name>小红</name>
+		<sex>女</sex>
+		<chinese>78</chinese>
+		<english>89</english>
+		<math>99</math>
+	</Student>
+	<Student id="2347">
+		<name>小李</name>
+		<sex>男</sex>
+		<chinese>77</chinese>
+		<english>89</english>
+		<math>89</math>
+	</Student>
+	<Student id="2348">
+		<name>小小</name>
+		<sex>女</sex>
+		<chinese>90</chinese>
+		<english>87</english>
+		<math>93</math>
+	</Student>
+	<Student id="2349">
+		<name>小花</name>
+		<sex>女</sex>
+		<chinese>88</chinese>
+		<english>89</english>
+		<math>95</math>
+	</Student>
+</Students>

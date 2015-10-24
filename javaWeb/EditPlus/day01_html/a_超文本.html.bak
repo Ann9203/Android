@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<style type="text/css">
+	a:link{
+		color:blue;
+	}
+	a:visited{
+		color:red;
+	}
+	a:active{
+		color:yellow;
+	}
+	a:hover
+	{
+		font-size:20px;
+	}
+</style>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<a>美女</a>
+	<a href="www.163.com">163<a/>
+	<a href="mailto:lixue326@163.com">我的邮箱<a/>
+	<a href="img.html" target="_parent">点击我</a><br/>
+	<img src="../1.jpg"/><br/>
+	<img src="../1.jpg"/><br/>
+	<img src="../1.jpg"/><br/>
+	<a href="#top">返回顶部</a>
+ </body>
+</html>

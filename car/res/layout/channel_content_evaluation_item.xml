@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" >
+
+    <LinearLayout
+        android:id="@+id/LL_Share"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical|center" >
+
+        <ImageView
+            android:id="@+id/content_evluation_othersPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/home_pic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/evaluation_all"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical|center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" >
+
+            <TextView
+                android:id="@+id/content_evluation_othersName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content_evluation_othersPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp" >
+
+            <!-- 其他人的评论 -->
+
+            <TextView
+                android:id="@+id/content_evluation_othersTime"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1" >
+            </TextView>
+
+            <!-- "赞" -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.4" >
+
+                <ImageView
+                    android:id="@+id/content_evluation_otherpraise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/praise" />
+
+                <TextView
+                    android:id="@+id/channel_news_comment"
+                    style="@style/list_notify_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2dp"
+                    android:background="@null"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <!-- "回复" -->
+
+            <TextView
+                android:id="@+id/content_evluation_replayOthers"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical|center"
+                android:text="@string/evaluation_replay"
+                android:textColor="@color/topic_color" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

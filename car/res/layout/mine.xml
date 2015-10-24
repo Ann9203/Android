@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F7F7" >
+    
+   <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@drawable/blue_background">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <!-- 返回按钮 -->
+            <!-- <ImageButton
+                android:id="@+id/about_us_back"
+                android:layout_width="14dp"
+                android:layout_height="25.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back" /> -->
+             <!-- 关于我们的布局 -->
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="用户中心"
+                android:textColor="#fff"
+                android:textSize="19sp" /> 
+
+        </FrameLayout>
+        <ImageView
+             android:id="@+id/user_picture"
+             android:layout_width="70dp"
+             android:layout_height="70dp"
+             android:layout_marginTop="8dp"
+             android:layout_gravity="center"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:src="@drawable/user_photo" />
+ 
+        <!-- 用户昵称，无忧心情的布局 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="5dp"
+            android:textColor="#FFFFFF"
+            android:text="无忧心情" />
+    </FrameLayout>
+
+
+      <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       
+       <LinearLayout
+           style="@style/operation_bar_style"
+           android:layout_height="325dp"
+           android:orientation="vertical" >
+               
+           <RelativeLayout
+               android:id="@+id/edit_nickname"
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:orientation="horizontal"
+               android:paddingLeft="20dp" >
+    
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@null"
+             android:drawableLeft="@drawable/edit_nickname"
+             android:text="修改昵称" 
+             android:textSize="20sp"/>
+         <ImageView
+             android:id="@+id/mine_order_button"
+             style="@style/operation_bar_button_style"                         
+             android:background="@drawable/product_list_more" />
+     </RelativeLayout>
+    
+		<View style="@style/PersonalLine" />
+
+		 <RelativeLayout
+		     android:id="@+id/modify_password"
+		     android:layout_width="wrap_content"
+		     android:layout_height="40dp"
+		     android:paddingLeft="20dp"
+		     android:orientation="horizontal" >
+    
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@null"
+             android:layout_marginTop="8dp"
+             android:drawableLeft="@drawable/edit_password"
+             android:text="修改密码"
+             android:textSize="20sp" />
+         <ImageView
+             android:id="@+id/mine_order_button"
+             style="@style/operation_bar_button_style"                         
+             android:background="@drawable/product_list_more" />
+     </RelativeLayout>
+   
+
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+     </RelativeLayout>
+      <View style="@style/PersonalLine" />
+
+      <RelativeLayout
+          android:id="@+id/my_clan"
+          android:layout_width="wrap_content"
+          android:layout_height="45dp"
+          android:paddingLeft="20dp"
+          android:orientation="horizontal" >
+    
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/my_clan"
+            android:text="我的部落"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp" />
+          <ImageView
+                  android:id="@+id/mine_order_button"
+                  style="@style/operation_bar_button_style"                         
+                  android:background="@drawable/product_list_more" />
+         </RelativeLayout>
+     <View style="@style/PersonalLine" />
+     <RelativeLayout
+          android:id="@+id/version_info"
+          android:layout_width="wrap_content"
+          android:layout_height="45dp"
+          android:paddingLeft="20dp"
+          android:orientation="horizontal" >
+    
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/version_info"
+            android:text="版本信息"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp" />
+           <ImageView
+                  android:id="@+id/mine_order_button"
+                  style="@style/operation_bar_button_style"                         
+                  android:background="@drawable/product_list_more" />
+     </RelativeLayout>
+     
+     
+		 <View style="@style/PersonalLine" />
+         <RelativeLayout
+          android:id="@+id/about_us"
+          android:layout_width="wrap_content"
+          android:layout_height="45dp"
+          android:paddingLeft="20dp"
+          android:orientation="horizontal" >
+    
+           <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/about_us"
+            android:text="关于我们"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp" />
+               
+
+               
+               <ImageView
+                  android:id="@+id/mine_order_button"
+                  style="@style/operation_bar_button_style"                         
+                  android:background="@drawable/product_list_more" />
+     </RelativeLayout>
+     <View style="@style/PersonalLine" />
+		
+		 </LinearLayout>
+	</ScrollView>
+	
+	
+      <Button
+          android:id="@+id/mine_quit"
+          android:layout_width="230dp"
+          android:background="@drawable/shape"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginBottom="14dp"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="15dp"
+          android:layout_weight="0.00"
+          android:gravity="center"
+          android:text="退出当前账号"
+          android:textColor="#FFFFFF"
+          android:textSize="20sp" />
+	 
+</LinearLayout>

@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DiscoveryActivity" >
+
+<!--     <TextView -->
+<!--         android:layout_width="0dp" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:layout_weight="0.01" -->
+<!--         android:visibility="invisible" /> -->
+
+    <!-- 频道名称 -->
+
+    <TextView
+        android:id="@+id/tv_channelName_id"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="0.17"
+        android:background="@color/light_orange"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:gravity="center" 
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.02"
+        android:visibility="invisible" />
+
+    <!-- 频道第1热门 -->
+
+    <TextView
+        android:id="@+id/tv_channelTopNews_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.72"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_gravity="center" />
+
+<!--     <TextView -->
+<!--         android:layout_width="0dp" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:layout_weight="0.01" -->
+<!--         android:visibility="invisible" /> -->
+
+</LinearLayout>

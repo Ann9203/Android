@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ 	<context-param>
+ 	    <param-name>paramA</param-name>
+ 	    <param-value>ABC</param-value>
+ 	</context-param>
+ 	 	<context-param>
+ 	    <param-name>paramB</param-name>
+ 	    <param-value>DEF</param-value>
+ 	</context-param>
+ 	 	<context-param>
+ 	    <param-name>paramC</param-name>
+ 	    <param-value>GHK</param-value>
+ 	</context-param>
+    <servlet>
+    <servlet-name>ServletDemo1</servlet-name>
+    <servlet-class>com.itheima.servlet.ServletDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletDemo2</servlet-name>
+    <servlet-class>com.itheima.servlet.ServletDemo2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletDemo3</servlet-name>
+    <servlet-class>com.itheima.servlet.ServletDemo3</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletDemo4</servlet-name>
+    <servlet-class>com.itheima.servlet.ServletDemo4</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletDemo5</servlet-name>
+    <servlet-class>com.itheima.servlet.ServletDemo5</servlet-class>
+ 	<init-param>
+ 	    <param-name>paramA</param-name>
+ 	    <param-value>ABC</param-value>
+ 	</init-param>
+ 	<init-param>
+ 	    <param-name>paramB</param-name>
+ 	    <param-value>DEF</param-value>
+ 	</init-param>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletDemo6</servlet-name>
+    <servlet-class>com.itheima.servlet.ServletDemo6</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletDemo7</servlet-name>
+    <servlet-class>com.itheima.servlet.ServletDemo7</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletDemo8</servlet-name>
+    <servlet-class>com.itheima.servlet.ServletDemo8</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ServletDemo1</servlet-name>
+    <url-pattern>/ServletDemoHello</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemo2</servlet-name>
+    <url-pattern>/ServletDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemo3</servlet-name>
+    <url-pattern>/ServletDemo3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemo4</servlet-name>
+    <url-pattern>/ServletDemo4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemo5</servlet-name>
+    <url-pattern>/ServletDemo5</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemo6</servlet-name>
+    <url-pattern>/ServletDemo6</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemo7</servlet-name>
+    <url-pattern>/ServletDemo7</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemo8</servlet-name>
+    <url-pattern>/ServletDemo8</url-pattern>
+  </servlet-mapping>
+
+</web-app>

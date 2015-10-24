@@ -1,0 +1,66 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#FFFFFF</color>
+     <color name="head_text">#0e5986</color>
+     <color name="black">#000000</color>
+     
+     
+     
+     <!-- 主題色 -->
+     <color name="topic_color">#01AFD2</color>
+     
+     <!-- 页面背景色 -->
+     <color name="subscribe_bg">#fff5f5f5</color>
+     <!-- 频道字体颜色 -->
+     <color name="subscribe_tip_text">#ff2e2e2e</color>
+     <!-- 首页新闻主题字体颜色 -->
+     <color name="home_news_text_color">#ff2e2e2e</color>
+     
+     <!-- 首页新闻分割線颜色 -->
+     <color name="home_news_divider_color">#EBEBEB</color>
+     
+     
+    <!-- 我的频道所添加栏目虚框颜色 --> 
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    
+    <!-- 频道分割线颜色 -->
+    <color name="subscribe_seperate_line">#ffcdcdcd</color>
+    
+    <color name="notify_view_divider">#66ffffff</color>
+    <color name="list_notify_text">#ffffffff</color>
+    
+     <!-- 列表item下滑颜色 -->
+    <color name="listitem_transparent">#00000000</color>
+    
+
+    <!-- 加载更多字体颜色 -->
+    <color name="listitem_black">#ff000000</color>
+    
+    <!--浅蓝色- “热门儿”三个字 -->
+    <color name="light_blue">#00AFD1</color>
+    <!--亮灰色-分割线的颜色 -->
+    <color name="lightgray">#D3D3D3</color>
+    <!-- 亮橙色-热门儿下的频道的背景色 -->
+    <color name="light_orange">#FF8B4A</color>
+    
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+     <color name="listitem_gray">#ff9da19e</color>
+    
+
+
+</resources>

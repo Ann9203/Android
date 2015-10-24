@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 屏幕整体 -->
+
+    <ImageView
+        android:id="@+id/login_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_title_img" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/desc_main_top_img"
+            android:src="@drawable/main_top_img" />
+
+        <!-- 图片下方主体 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical" >
+
+                <!-- 放置4个图标和文字的位置 -->
+                <!-- 前两个 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                    
+                    <!-- 安标抽查 -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                       android:layout_marginLeft="-7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/security_check_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:src="@drawable/securitycheck_btn_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/securitycheck_btn_str"
+                            android:textColor="@color/darkgray"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                    
+                    <!-- 抽查查询 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/spotcheck_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:contentDescription="@string/desc_spotcheck_str"
+                            android:src="@drawable/spotcheck_btn_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/spotcheck_btn_str"
+                            android:textColor="@color/darkgray"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 后两个 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!-- 上传下载 -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/updownload_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:contentDescription="@string/desc_updownload_str"
+                            android:src="@drawable/updownload_btn_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-1dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/updwonload_btn_str"
+                            android:textColor="@color/darkgray"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                    <!-- 设置 -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/settings_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:src="@drawable/settings_btn_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="设  置"
+                            android:textColor="@color/darkgray"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

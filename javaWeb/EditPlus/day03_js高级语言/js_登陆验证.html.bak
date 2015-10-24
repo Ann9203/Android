@@ -1,0 +1,52 @@
+
+<html lang="en">
+ <head>
+  <title>登陆验证</title>
+	
+ </head>
+ 
+ <body>
+	<form action="js_二级城市联动.html" method="get" onsubmit="return chekform()">
+		用户名：<input type="text" id="username" name="username" onblur="checkname()"/><br/>
+		<span id="spname" name="spname"></span>
+		密  码：<input type="password" id="pwd" name="pwd"/><br/>
+				<input type="submit" value="登陆"/>
+	</form>
+		<script type="text/javascript">
+				function checkname()
+				{
+					 if($("spname").value==""|| $("spname").value==null )		{
+		
+					   $("spname").innerHTML="此项为必填项，请输入您的用户名！";
+					   $("spname").style.color="#FF0000";
+					   $("spname").style.border="1px red";
+					   return false;
+					//var name=document.getElementsByName("username")[0].value;
+					//if(name=="")
+					//{
+						//alert("请填写用户名");
+						//return false;
+					//} 
+
+				}
+				function chekform()
+				{
+					var name=document.getElementsByName("username")[0].value;
+
+					var pwd=document.getElementsByName("pwd")[0].value;
+					if(name=="")
+					{
+						alert("请填写用户名");
+						return false;
+					} 
+					if(pwd=="")
+					{
+						alert("请填写密码");
+						return false;
+					}
+					return true;
+				}
+			</script>
+		  
+		 </body>
+		</html>

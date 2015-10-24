@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#F7F7F7" >
+
+    <LinearLayout
+        style="@style/top_title_style" >
+
+        <!-- 登录的布局 -->
+
+        <TextView
+               style="@style/top_title_word_style"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="95dp"
+                android:text="登录"
+                />
+        <!-- 注册的布局 -->
+
+        <TextView
+             android:id="@+id/register_id"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:paddingLeft="60dp"
+             android:layout_marginTop="2dp"
+             android:paddingRight="10dp"
+             android:gravity="center"
+             android:text="注册"
+             android:textColor="#FFFFFF"
+             android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/operation_bar_style"
+        android:layout_height="46dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <EditText
+                android:id="@+id/et_username_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/user_picture"
+                android:hint="  用户名/手机号"
+                android:textColor="#BEBEBE"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/PersonalLine" />
+
+    <LinearLayout
+        style="@style/operation_bar_style"
+        android:layout_height="46dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <EditText
+                android:id="@+id/et_password_id"
+                android:inputType="textPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/lock"
+                android:hint="  密码"
+                android:textColor="#BEBEBE"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/PersonalLine" />
+
+    <Button
+        android:id="@+id/bt_login_id"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.00"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="登   录"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:text="忘记密码?"
+        android:textColor="#348DD0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:text="或第三方账号登录"
+        android:textColor="#BEBEBE"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/weixin_login"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信登录"
+                android:textColor="#BEBEBE"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/weibo_login"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微博登录"
+                android:textColor="#BEBEBE"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/qq_login"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QQ登录"
+                android:textColor="#BEBEBE"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

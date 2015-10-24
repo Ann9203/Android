@@ -1,0 +1,66 @@
+
+<html lang="en">
+ <head>
+  
+  <title>获取元素</title>
+ </head>
+ <body>
+	<div>你好我在这里</div>
+	<script type="text/javascript">
+		/*
+			需求通过上午学过的节点的只是获取hr中的你好我在这里这六个字
+			思路：先获取hr这个节点，然后再获取他的子节点（文本节点）
+		*/
+		var hr=document.getElementsByTagName("div")[0];
+		/*alert(hr.innerText);
+		alert(hr.innerHTML)
+		alert(hr.childNodes[0].nodeValue);
+		alert(hr.firstChild.nodeValue);*/
+		alert(hr.lastChild.nodeValue);
+
+		/*
+			全选/多选			
+		*/
+		function chkSelectAll(chk)
+		{
+			var checkbox=document.getElementsByName("hobby");
+			for(var i=0;i<checkbox.length;i++)
+			{
+				checkbox[i].checked=chk;
+			}
+		}
+		function reverseChecked()
+		{
+			var check=document.getElementsByName("hobby");
+			var chall=document.getElementsByName("hobbys")[0];
+			//定义一个第三方变量
+			var flag=true;
+			//遍历循环没一个checkbox的控件
+			for(var i=0;i<check.length;i++)
+			{
+				
+				//反选，就是每个控件的选择状态取反				
+				check[i].checked=!check[i].checked;
+				//这个判断每个空间的选择状态是否为false的状态
+				//只要有一个为false那么全选的框框的状态就应该是false
+				//就不应该被选择上
+				if(check[i].checked==false)
+				{
+					//改变flag的状态
+					flag=false;
+				}
+			}
+			//让全选框的状态等于flag
+			chall.checked=flag;
+			
+		}
+	</script>
+	全选/全不选<input type="checkbox" name="hobbys" value="hobby" onclick="chkSelectAll(this.checked)"/><br/>
+				<input type = "checkbox" name = "hobby" value = "吃饭" >学习</input>
+				<input type = "checkbox" name = "hobby" value = "睡觉" >睡觉</input>
+				<input type = "checkbox" name = "hobby" value = "撸代码" >撸代码</input><br/>
+				<input type = "button" value = "全选" onclick = "chkSelectAll(true)" ></input>
+			<input type = "button" value = "全不选" onclick = "chkSelectAll(false)"></input><br/>
+			<input type = "button" value = "反选" onclick = "reverseChecked()"></input>
+ </body>
+</html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/login_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/top_uploaddown_img" />
+
+    <ScrollView
+        android:id="@+id/id_more_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginRight="0.0dip"
+            android:layout_marginTop="0dip"
+            android:background="@color/whitesmoke"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/more_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50.0dip"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="14.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="14.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dip"
+                    android:text="@string/uploadChecklist"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <ImageView
+                    android:id="@+id/update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffcccccc" />
+
+            <RelativeLayout
+                android:id="@+id/more_exit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minHeight="@dimen/fifty_dp"
+                android:paddingBottom="@dimen/fourteen_dp"
+                android:paddingLeft="@dimen/fourteen_dp"
+                android:paddingRight="@dimen/twelve_dp"
+                android:paddingTop="@dimen/fourteen_dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/fifteen_dp"
+                    android:text="@string/downloadSecurityLicence"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <ImageView
+                    android:id="@+id/download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

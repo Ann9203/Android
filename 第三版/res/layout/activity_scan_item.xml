@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp" >
+    
+    <!-- 布局ListView格式 -->
+    <!-- 也可以添加ImageView等进行图片布局，本功能主要是调整字体大小和文本位置 -->
+    
+	<TextView 
+	    android:id="@+id/product_item_title_id"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1.2"
+	    android:layout_marginLeft="5dp"
+	    android:text="@string/product_item_title"
+	    android:textSize="14sp"
+	    android:textColor="@color/black"/>
+	<TextView 
+	    android:id="@+id/product_item_content_id"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="2.0"
+	    android:text="@string/product_item_content"
+	    android:textSize="14sp"
+	    android:textColor="@color/black"/>
+    
+</LinearLayout>

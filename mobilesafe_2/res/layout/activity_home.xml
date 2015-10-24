@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="功能列表"
+       android:background="#8866ff00"
+       android:textSize="22sp"
+       android:gravity="center_horizontal"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"   
+      
+       />
+ 
+ <com.example.ui.MyTextView 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="欢迎使用此软件，这款件软，使你的手机更加轻松，运行速度更加快捷。。。。。。"
+     android:singleLine="true"
+    android:ellipsize="marquee"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:layout_margin="5dp"
+    android:textSize="18sp"
+   	android:textColor="#ff8800"
+     
+     
+     />
+   <GridView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/gv_home_application"
+       android:numColumns="3"
+       android:verticalSpacing="10dp"
+       android:layout_margin="20dp"  
+       ></GridView>
+</LinearLayout>

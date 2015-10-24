@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="group_search">Search</string>
+    <string name="app_name">安标查询系统</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- 登录页面 -->
+    <string name="login">登录</string>
+    <string name="loginacount">帐号：</string>
+    <string name="inputaccount">请输入帐号</string>
+    <string name="loginpassword">密码：</string>
+    <string name="inputpassword">请输入密码</string>
+    <string name="login_btn">立即登陆</string>
+    <string name="name_empty">用户名不能为空！</string>
+    <string name="pwd_empty">密码不能为空！</string>
+    <string name="login_failed">用户名或密码不正确！</string>
+    <string name="connect_internet_tip">请打开手机网络试试！</string>
+
+    <!-- 主页面 -->
+    <string name="desc_main_top_img">主页面上部的图片</string>
+    <string name="desc_spotcheck_str">抽查查询图标</string>
+    <string name="desc_securitycheck_str">安标抽查图标</string>
+    <string name="desc_settings_str">设置图标</string>
+    <string name="desc_updownload_str">上传下载图标</string>
+    <string name="spotcheck_btn_str">抽查查询</string>
+    <string name="securitycheck_btn_str">安标抽查</string>
+    <string name="settings_btn_str">设置</string>
+    <string name="updwonload_btn_str">下载</string>
+
+    <!-- 上传页面 -->
+    <string name="uploadChecklist">上传抽查记录</string>
+    <string name="downloadSecurityLicence">下载安标证书</string>
+    <string name="interval_line">间隔线</string>
+    <string name="enter_arrow_str">进入箭头图片</string>
+
+    <!-- 下载页面 -->
+    <string name="anbiao_code">标识编号</string>
+    <string name="provide_date">发证日期</string>
+    <string name="term_validity">有效期</string>
+    <string name="holder_person">持证人</string>
+    <string name="registered_address">注册地址</string>
+    <string name="production_unit_id">生产单位</string>
+    <string name="production_address">生产地址</string>
+    <string name="product_model">规格型号</string>
+    <string name="standard">标准和要求</string>
+    <string name="scope_application">适用范围</string>
+    <string name="remark">备注</string>
+    <string name="state">状态</string>
+    <string name="down_page">下载</string>
+    <string name="other_code">关联的其他的产品安标证书</string>
+    <string name="desc_scan_topimg">掃描頁頭圖片</string>
+    <string name="no_anbiao_relation_name">没有关联的安标证书</string>
+    <string name="no_anbiao_relation_id">......</string>
+    <string name="download_tip">请您耐心等待...</string>
+    <string name="download_over">下载完成!</string>
+
+    <!-- 扫描页 -->
+    <string name="connection_mode">连接模式</string>
+    <string name="long_distance">远距离</string>
+    <string name="short_distance">近距离</string>
+    <string name="scan_btn_str">开始扫描</string>
+    <string name="scan_btn_end">结束扫描</string>
+    <string name="product_info">产品信息</string>
+    <string name="spotcheck_info">抽查信息</string>
+    <string name="spotcheck_pic">抽查图片</string>
+    <string name="product_words">文字</string>
+    <string name="product_images">产品图片</string>
+    <string name="spotcheck_result">抽查结果</string>
+    <string name="colliery_name">煤矿名称</string>
+    <string name="is_qualified">是否合格</string>
+    <string name="qualified">合格</string>
+    <string name="notqualified">不合格</string>
+    <string name="exception_info">异常信息</string>
+    <string name="photograph_pics">拍照照片</string>
+    <string name="photograph_btn_str">拍照</string>
+    <string name="submit_btn_str">提交</string>
+    <string name="product_item_title">EPC编号</string>
+    <string name="product_item_content">ODE02838293EC99389DUA00838</string>
+    <string name="query_certificate_list_str">查看下载列表</string>
+    
+
+    <!-- 设置页 -->
+    <string name="sys_ref_settings">系统参数设置</string>
+    <string name="power">功率(dBm)：</string>
+    <string name="net_choose">网络选择：</string>
+    <string name="num_data">3G</string>
+    <string name="WIFI">WIFI</string>
+    <string name="makesure">确认</string>
+    <string name="desc_powerminus_str">减少功率</string>
+    <string name="desc_powerplus_str">增加功率</string>
+    <string name="server_url">服务器地址：</string>
+
+    <!-- 抽查查询主页面 -->
+    <string name="search_btn">搜索</string>
+    <string name="delete_record_btn">删除记录</string>
+    <string name="search_content_hint">请输入关键字查询</string>
+    <string name="title_activity_sample">Sample</string>
+    <string name="action_settings">Settings</string>
+    <string name="company_name">山西煤炭有限责任公司</string>
+    <string name="epc_num">0DB0FB63AC1F3681E</string>
+    <string name="date">2015年3月18日</string>
+    <string name="upload">已上传</string>
+    <string name="not_upload">未上传</string>
+    <string name="product_name">山东泰丰自动化RFID煤矿探察块</string>
+    <string name="product_type">规格型号:KBA127</string>
+    <string name="product_name_str">产品名称</string> <!-- 被下载页面引用 -->
+    <string name="product_type_str">规格型号</string>
+    <string name="company_name_str">企业名称</string>
+    <string name="association_anbiao_code">关联的安标标识编号</string>
+    <string name="upload_status_str">上传状态</string>
+    <string name="tid_code">TID 编号</string>
+    <string name="date_str">时间</string>
+    <string name="title_activity_query_certificate">QueryCertificateActivity</string>
+    <string name="title_activity_product_info">ProductInfoActivity</string>
+	<string name="coalmine_name">煤矿名称</string>
+	<string name="worker_name">抽查人员</string>
+	<string name="check_date">抽查日期</string>
+	<string name="check_result">抽查结果</string>
+
+    <string name="category_home">首页</string>
+    
+</resources>

@@ -1,0 +1,50 @@
+package com.jczb.checkpoint.dao.impl;
+
+import android.content.Context;
+
+import com.jczb.checkpoint.dao.IAnBiaoRelation;
+import com.jczb.checkpoint.db.DBHelper;
+import com.jczb.checkpoint.manager.DownRelationManager;
+
+public class AnbiaoCertificateImpl implements IAnBiaoRelation{
+	
+	private DBHelper dbHelper;
+
+	
+	public AnbiaoCertificateImpl(Context context)
+	{
+		dbHelper = new DBHelper(context);
+	}
+
+
+	@Override
+	public void insert(DownRelationManager downRelationManager) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void delete(int downCertificate) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void delete(String condiction) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void update(DownRelationManager downRelationManager) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+}
