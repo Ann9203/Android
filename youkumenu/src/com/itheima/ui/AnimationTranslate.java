@@ -31,6 +31,30 @@ public class AnimationTranslate {
 		rotateAnimation.setAnimationListener(new MyAnimationListener() );
 		layout.startAnimation(rotateAnimation);
 	}
+	/**
+	 * 旋转进来的动画
+	 * @author 雪宝宝
+	 *
+	 */
+	public  static void rotateInAnim(RelativeLayout layout,long delay){
+		//设置有多少个子空间
+				int childCount = layout.getChildCount();
+				//如果隐藏，则找到所有的子view，禁用
+				for(int i=0;i<childCount;i++){
+					layout.getChildAt(i).setEnabled(true);
+				}
+				//开始动画，旋转动画
+				RotateAnimation rotateAnimation=new RotateAnimation(-180f, 0f, Animation.RELATIVE_TO_SELF, 0.5f,Animation.RELATIVE_TO_SELF,1.0f);
+				//设置时间
+				rotateAnimation.setDuration(500);
+				//设置动画停留在结束的位置
+				rotateAnimation.setFillAfter(true);
+				//设置动画开始延时
+				rotateAnimation.setStartOffset(delay);
+				//设置事件的监听
+				rotateAnimation.setAnimationListener(new MyAnimationListener() );
+				layout.startAnimation(rotateAnimation);
+	}
 	static class MyAnimationListener implements AnimationListener{
 
 		@Override
