@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;com.itheima.ui.Toggle.onTouchEvent().currentX&apos; in &apos;com.itheima.ui.Toggle.onTouchEvent()&apos; to field&#x0D;&#x0A;- Original project: &apos;开关设计&apos;&#x0D;&#x0A;- Original element: &apos;com.itheima.ui.Toggle.onTouchEvent().currentX&apos;&#x0D;&#x0A;- Field name: &apos;currentX&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" description="Convert local variable &apos;currentX&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;com.itheima.ui{Toggle.java" name="currentX" selection="1349 21" stamp="1445872035741" static="false" version="1.0" visibility="2"/>
+</session>

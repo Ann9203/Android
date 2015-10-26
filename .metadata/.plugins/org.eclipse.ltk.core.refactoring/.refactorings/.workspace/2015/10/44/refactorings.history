@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 6 resources" deleteContents="false" description="Delete 6 resources" element1="/01_WidgetDemo" element2="/02_优酷菜单" element3="/03_轮播图广告" element4="/04_下拉选择框" element5="/05_自定义开关" element6="/下拉框" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="6" stamp="1445867638736"/>
+</session>

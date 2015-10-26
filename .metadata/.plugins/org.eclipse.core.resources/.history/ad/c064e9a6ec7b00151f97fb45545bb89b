@@ -1,0 +1,44 @@
+package com.itheima.ui;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+
+public class Toggle extends View {
+
+	public Toggle(Context context) {
+		super(context);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Toggle(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Toggle(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void setBackgroundImage(int switchBackground) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setSlideImage(int slideButton) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setState(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setState(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

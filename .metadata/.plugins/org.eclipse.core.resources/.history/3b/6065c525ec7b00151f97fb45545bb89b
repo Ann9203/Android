@@ -1,0 +1,22 @@
+package com.itheima.switchs;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+
+import com.itheima.ui.Toggle;
+
+public class MainActivity extends Activity {
+
+	private Toggle toggle;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		toggle=findViewById(R.id.mytoggle);
+		
+	}
+
+
+
+}
